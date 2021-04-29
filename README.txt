@@ -17,4 +17,5 @@ git push heroku master
 
 heroku open
 
+heroku config:get MONGODB_URI
 
