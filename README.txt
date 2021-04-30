@@ -20,11 +20,22 @@ heroku open
 heroku config:get MONGODB_URI
 
 
-SERVER
-=================
+
+=== SERVER
 git init
 npm i express
 git commit -m "First commit"
 heroku create navatar-mern
 git push heroku master
 
+=== POSTGRES
+module.exports = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
+    protocol: 'postgres',
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    }
+});
