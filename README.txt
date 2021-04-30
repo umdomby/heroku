@@ -28,6 +28,8 @@ git commit -m "First commit"
 heroku create navatar-mern
 git push heroku master
 
+const PORT = process.env.PORT || 5000
+
 === POSTGRES
 module.exports = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
@@ -39,3 +41,5 @@ module.exports = new Sequelize(process.env.DATABASE_URL, {
         }
     }
 });
+
+
