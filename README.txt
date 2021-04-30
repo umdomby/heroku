@@ -19,3 +19,11 @@ heroku open
 
 heroku config:get MONGODB_URI
 
+
+SERVER
+git init
+npm i express
+git commit -m "First commit"
+heroku create navatar-mern
+git push heroku master
+
