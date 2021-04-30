@@ -22,10 +22,16 @@ heroku config:get MONGODB_URI
 
 
 === SERVER
+---------------------------------------
 git init
-npm i express
 git commit -m "First commit"
 heroku create navatar-mern
+
+or
+
+heroku git:clone -a navatar-backend
+git commit -m "First commit"
+---------------------------------------
 git push heroku master
 
 const PORT = process.env.PORT || 5000
