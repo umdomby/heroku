@@ -24,6 +24,7 @@ heroku config:get MONGODB_URI
 === SERVER
 ---------------------------------------
 git init
+git add .
 git commit -m "First commit"
 heroku create navatar-mern
 
